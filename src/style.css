@@ -488,7 +488,21 @@ span {
         left: 0;
         box-shadow: 0 .1rem 1rem var(--shadow-color);
     }
-
+/* Tombol Menu */
+#menu-icon {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    display: block; /* Pastikan tampil pada layar kecil */
+    position: relative; /* Atur posisi jika diperlukan */
+    z-index: 101; /* Pastikan berada di atas elemen lain */
+}
+#darkMode-icon {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative; /* Atur posisi jika diperlukan */
+    z-index: 101; /* Pastikan berada di atas elemen lain */
+}    
     #menu-icon {
         display: block;
     }
