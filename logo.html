@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Krisna Putra P.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #00ff95db;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: scaleUp 1s forwards;
+        }
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            animation: scaleUp 1s forwards;
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background-color: #4a6fa5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: slideInUp 1s forwards;
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="images/krisna.jpg" class="profile-img">
+            <div>
+                <h1>KRISNA PUTRA PAMUNGKAS</h1>
+                <p>MURID SMK TI PELITA NUSANTARA</p>
+            </div>
+        </header>
+        <section class="section">
+            <div>
+            <h2>DATA PRIBADI</h2>
+            <li><strong>Nama:</strong> Krisna Putra Pamungkas</li>
+            <li><strong>Alamat:</strong> Karangrejo, Tulungagung</li>
+            <li><strong>Telepon:</strong> +62 87758819977</li>
+            <li><strong>Email:</strong> krisnaputrapamungkas989@gmail.com</li>
+                <li><p><strong>Tautan Media Sosial:</strong>
+                    <a href="https://www.instagram.com/lurah_spanyol17/">Intagram</a> |
+                    <a href="https://github.com/krisnaputrapamungkass">GitHub</a> |
+                    <a href="https://t.me/KrisnaPutra17">Telegram</a>
+                </p></li>
+            </li>
+            <li><strong>Tentang saya:</strong> Saya Krisna putra saya murid dari SMK TI Pelita Nusantara saya dari
+                jurusan RPL (rekayasa perangkat lunak) dan saya berminat di bidang IT, Karena saya ingin belajar IT yang lebih dalam.</li>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>PENDIDIKAN</h2>
+            <li><strong>2019 - 2022:</strong> Mtsn 6 Tulungagung</li>
+            <li><strong>2022 - sekarang:</strong> SMK TI Pelita Nusantara</li>
+        </section>
+
+        <section class="section">
+            <h2>KEAHLIHAN</h2>
+            <li class="mr-10">Coding</li>
+            <li>Design web</li>
+            <li>Bekerja dalam tim</li>
+        </section>
+
+        <section class="section">
+            <h2>KEMAMPUAN</h2>
+            <li>Laravel</li>
+            <li>Codeigniter 3</li>
+            <li>Bootstrap</li>  
+        </section>
+
+        <footer>
+            <p>&copy; Krisna.Ganden. "Never give up on your dreams. Every failure is a stepping stone to greater
+                success. Keep your enthusiasm and keep trying!".</p>
+        </footer>
+    </div>
+</body>
+
+</html>

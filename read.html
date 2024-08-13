@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More</title>
+    <style>
+        .about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #02eeff; /* Ganti dengan warna yang Anda inginkan */
+            padding: 50px 0;
+        }
+
+        .about-img {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .about-img img {
+            max-width: 100%;
+            height: auto;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        .about-content h2, .about-content h3 {
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 40px; /* Tambahkan margin bawah pada paragraf untuk memberikan ruang lebih di atas tombol */
+        }
+
+        
+
+        .btn-back {
+            margin-top: 20px; /* Tambahkan margin atas pada tombol Back */
+            background-color: #333; /* Warna tombol back */
+            color: #fff; /* Warna teks tombol back */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/SAVE_20230108_233328.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Krisna Putra</h3>
+            <p>
+                My name is Krisna Putra Pamungkas, a student at SMK TI Pelita Nusantara. 
+                I have a great interest in the field of information technology and always try to deepen my knowledge in this field. 
+                <span id="more-text" style="display:none;">
+                    Beyond my studies, I am particularly passionate about web development, where I enjoy crafting user-friendly websites and applications. My skills extend to UI/UX design, which allows me to create visually appealing and intuitive interfaces. I also have experience in data management, which involves organizing and analyzing information efficiently.
+                    
+                    I am constantly learning new tools and technologies to stay ahead in this ever-evolving industry. My goal is to become a well-rounded IT professional who can contribute to impactful projects, whether in software development, design, or data-driven solutions. I am eager to take on challenges that will further enhance my skills and knowledge.
+                </span>
+                <a href="javascript:void(0);" class="btn" id="read-more-btn">Read More</a>
+            </p>
+            <!-- Tombol Back -->
+            <a href="javascript:history.back()" class="btn-back">Back</a>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById("read-more-btn").addEventListener("click", function() {
+            var moreText = document.getElementById("more-text");
+            var btnText = this;
+    
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btnText.textContent = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Read More";
+            }
+        });
+    </script>
+    
+</body>
+</html>

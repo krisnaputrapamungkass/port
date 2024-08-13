@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Krisna</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div><i class="bx bx-moon" id="darkMode-icon"></i></div>
+        
+        <div><i class='bx bx-menu' id="menu-icon"></i></div>
+    </header> 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello I'am</h3>
+            <h1>Krisna Putra Pamungkas</h1>
+            <p>I am a student from SMK Ti Pelita Nusantara</p>
+
+            <div class="social-media">
+                <a href="https://www.instagram.com/lurah_spanyol17/"><i class='bx bxl-instagram'></i>
+                <a href="https://github.com/krisnaputrapamungkass"><i class='bx bxl-github' ></i></a>
+                <a href="https://t.me/KrisnaPutra17"><i class='bx bxl-telegram'></i></a>
+            </div>
+            <a href="cv.jpeg" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="Home image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/krisna.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm Krisna Putra </h3>
+            <p>My name is Krisna Putra Pamungkas, a student at SMK TI Pelita Nusantara. I have a great interest in the field of information technology and always try to deepen my knowledge in this field.</p>            
+            <a href="read.html" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="portofolio" id="portofolio">
+        <h2 class="heading">My <span>Portfolio</span></h2>
+
+        <div class="portofolio-container">
+            <div class="portofolio-box">
+                <img src="images/Screenshot (143).png" height="100%" width="100%" alt="">
+
+                <div class="portofolio-layer">
+                    <h4>CrudSiswa</h4>
+                    <p>Data Application Student data</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="images/apotek.png" height="100%" width="100%" alt="">
+
+                <div class="portofolio-layer">
+                    <h4>ApotekNo</h4>
+                    <p>Customer Data and Medicine Data Application</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="images/web (2).png" height="100%" width="100%" alt="">
+  
+                <div class="portofolio-layer">
+                    <h4>Design web Rs</h4>
+                    <p>Web Design for hospital data applications.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portofolio-box">
+                <img src="images/des.png" height="82%" width="82%" alt="">
+  
+                <div class="portofolio-layer">
+                    <h4>UI/UX Pemesanan</h4>
+                    <p>Display for food ordering.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="sendEmail.php" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="number" name="mobile" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+                
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Krisna | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</html>
