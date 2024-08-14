@@ -9,7 +9,6 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
 :root {
@@ -405,6 +404,7 @@ span {
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
+        overflow-x: hidden;
     }
 
     .home .profession-container {
