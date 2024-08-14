@@ -22,7 +22,7 @@
 .dark-mode {
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
-    --shadow-color: rgba(0,0,0, .7);
+    --shadow-color: rgba(255, 255, 255, 0.2);
 }
 
 html {
@@ -355,7 +355,7 @@ span {
     border-radius: .8rem;
     margin: .7rem 0;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
-} 
+}
 
 .contact form .input-box input {
     width: 49%;

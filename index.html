@@ -35,7 +35,7 @@
                 <a href="https://github.com/krisnaputrapamungkass"><i class='bx bxl-github' ></i></a>
                 <a href="https://t.me/KrisnaPutra17"><i class='bx bxl-telegram'></i></a>
             </div>
-            <a href="cv.jpeg" class="btn">Download CV</a>
+            <a href="Cv-krisna.pdf" class="btn" id="downloadCV" download>Download CV</a>
         </div>
 
         <div class="home-img">
@@ -101,13 +101,13 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="sendEmail.php" method="POST">
+        <form id="contact-form">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name" required>
                 <input type="email" name="email" placeholder="Email Address" required>
             </div>
             <div class="input-box">
-                <input type="number" name="mobile" placeholder="Mobile Number" required>
+                <input type="tel" name="mobile" placeholder="Mobile Number" required>
                 <input type="text" name="subject" placeholder="Email Subject" required>
             </div>
             <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
@@ -127,7 +127,8 @@
 
 
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>
